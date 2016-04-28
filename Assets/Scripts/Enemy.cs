@@ -10,6 +10,8 @@ public class Enemy : LivingEntity  {
 		Attacking 
 	}
 
+	public ParticleSystem deathParticle;
+
 	State currentState;
 
 	NavMeshAgent pathfinder;
@@ -22,7 +24,7 @@ public class Enemy : LivingEntity  {
 	float attackDistance=.5f; 
 	float timeBetweenAttacks=1;
 	float nextAttackTime;
-	float damage = 1 ; 
+	float damage = 1; 
 
 	float myCollisionRadius;
 	float targetCollisionRadius;
@@ -52,8 +54,13 @@ public class Enemy : LivingEntity  {
 			StartCoroutine (UpdatePath ());
 		}
 
+	}
 
-
+	public override void TakeHit (float damage, Vector3 hitPoint, Vector3 hitDirection)
+	{
+		if(damage >= health)
+			Destroy(Instantiate(deathParticle.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection))as GameObject, deathParticle.startLifetime);
+		base.TakeHit (damage, hitPoint, hitDirection);
 	}
 
 	void OnTargetDeath(){

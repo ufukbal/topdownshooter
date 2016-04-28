@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{1CC5E00B-71F7-5703-7035-BB07C2E4DADD}") = "Arena Brawler", "Assembly-CSharp.csproj", "{485DE603-F246-4B5B-D191-252E8A45E90D}"
 EndProject
+Project("{1CC5E00B-71F7-5703-7035-BB07C2E4DADD}") = "Arena Brawler", "Assembly-CSharp-Editor.csproj", "{C12001F2-6F35-B742-DA71-DD381BDD6203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{485DE603-F246-4B5B-D191-252E8A45E90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{485DE603-F246-4B5B-D191-252E8A45E90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{485DE603-F246-4B5B-D191-252E8A45E90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12001F2-6F35-B742-DA71-DD381BDD6203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12001F2-6F35-B742-DA71-DD381BDD6203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12001F2-6F35-B742-DA71-DD381BDD6203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12001F2-6F35-B742-DA71-DD381BDD6203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
